@@ -7,7 +7,7 @@
  */
 function encore_tags(string $name, string $type)
 {
-    $entry_points_file = public_path() . 'entrypoints.json';
+    $entry_points_file = root_path() . '/public/build/entrypoints.json';
     if (file_exists($entry_points_file)) {
         $data = json_decode(file_get_contents($entry_points_file), true);
         $js = $data['entrypoints'][$name][$type];
