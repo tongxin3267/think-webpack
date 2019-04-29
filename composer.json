@@ -1,6 +1,6 @@
 {
     "name": "kuange/think-webpack",
-    "description": "Use webpack in Thinkphp6.",
+    "description": "Use webpack in Thinkphp.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -10,8 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=7.1.0",
-        "topthink/think-helper": "^3.0.0"
+        "php": ">=5.6"
     },
     "autoload": {
         "files": [

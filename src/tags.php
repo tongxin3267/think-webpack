@@ -7,17 +7,16 @@
  */
 function encore_tags(string $name, string $type)
 {
-    $entry_points_file = root_path() . '/public/build/entrypoints.json';
+    $entry_points_file = app()->getRootPath() . 'public/build/entrypoints.json';
     if (file_exists($entry_points_file)) {
         $data = json_decode(file_get_contents($entry_points_file), true);
-        $js = $data['entrypoints'][$name][$type];
-        foreach ($js as $i) {
+        foreach ($data['entrypoints'][$name][$type] as $item) {
             switch ($type) {
                 case 'css':
-                    echo '<link rel="stylesheet" href="' . $i . '" />' . "\r\n";
+                    echo '<link rel="stylesheet" href="' . $item . '" />' . "\r\n";
                     break;
                 case 'js':
-                    echo '<script src="' . $i . '"></script>' . "\r\n";
+                    echo '<script src="' . $item . '"></script>' . "\r\n";
                     break;
                 default:
             }
