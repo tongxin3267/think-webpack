@@ -22,7 +22,7 @@
     "scripts": {
         "post-package-install": [
             "@yarn add @symfony/webpack-encore --dev",
-            "@cp -r ./vendor/kuange/copy_files/* ./"
+            "@cp -r ./vendor/kuange/think-webpack/copy_files/* ./"
         ]
     }
 }
