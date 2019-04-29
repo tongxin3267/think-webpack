@@ -1,5 +1,5 @@
 # think-webpack
-在 ThinkPHP6中使用 webpack
+在 ThinkPHP5.1/6中使用 webpack
 
 使用了 `symfony` 的 encore, 更多使用请参考
 
@@ -9,8 +9,8 @@ https://symfony.com/doc/current/frontend.html
 
 ## 环境需求
 
-- php >= 7.1
-- thinkphp >= 6
+- php >= 5.6
+- thinkphp >= 5.1/6
 
 ## 安装
 
