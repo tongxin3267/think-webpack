@@ -1,7 +1,11 @@
 # think-webpack
 在 ThinkPHP6中使用 webpack
 
-使用了 `symfony
+使用了 `symfony` 的 encore, 更多使用请参考
+
+https://symfony.com/doc/current/frontend/encore/installation.html
+
+https://symfony.com/doc/current/frontend.html
 
 ## 环境需求
 
@@ -67,8 +71,3 @@ yarn encore production
 </body>
 </html>
 ```
-
-## encore 更多使用请参考
-
-https://symfony.com/doc/current/frontend/encore/installation.html
-https://symfony.com/doc/current/frontend.html
