@@ -18,11 +18,5 @@
             "src/tags.php"
         ]
     },
-    "minimum-stability": "dev",
-    "scripts": {
-        "post-package-install": [
-            "@yarn add @symfony/webpack-encore --dev",
-            "@cp -r ./vendor/kuange/think-webpack/copy_files/* ./"
-        ]
-    }
+    "minimum-stability": "dev"
 }
