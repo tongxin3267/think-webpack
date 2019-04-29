@@ -5,7 +5,7 @@
  * @param string $name
  * @param string $type
  */
-function encore_tags(string $name, string $type)
+function encore_tags($name, $type)
 {
     $entry_points_file = app()->getRootPath() . 'public/build/entrypoints.json';
     if (file_exists($entry_points_file)) {
@@ -28,7 +28,7 @@ function encore_tags(string $name, string $type)
  * link 标签
  * @param string $name
  */
-function encore_link_tags(string $name = '')
+function encore_link_tags($name = '')
 {
     encore_tags($name, 'css');
 }
@@ -37,7 +37,7 @@ function encore_link_tags(string $name = '')
  * script 标签
  * @param string $name
  */
-function encore_script_tags(string $name = '')
+function encore_script_tags($name = '')
 {
     encore_tags($name, 'js');
 }
