@@ -1,0 +1,28 @@
+{
+    "name": "kuange/think-webpack",
+    "description": "Use webpack in Thinkphp6.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kuange",
+            "email": "shenfakuan@163.com"
+        }
+    ],
+    "require": {
+        "php" : ">=7.1.0",
+        "topthink/framework": "^6.0.0",
+        "topthink/think-helper": "^3.0.4"
+    },
+    "autoload": {
+        "files": [
+            "src/tags.php"
+        ]
+    },
+    "scripts": {
+        "post-package-install": [
+            "@yarn add @symfony/webpack-encore --dev",
+            "@cp -r ./vendor/kuange/copy_files/* ./"
+        ]
+    }
+}
